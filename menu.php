@@ -1,5 +1,5 @@
 <!-- BANDEAU DEROULANT -->
-<div class="bandeau">
+<!--<div class="bandeau">
     <div class="news">
         <p>Breaking News</p>
     </div>
@@ -10,7 +10,7 @@
             <li style="display: inline;">Lorem ipsum dolor sit amet, consectetur</li>
         </ul>
     </div>
-</div>
+</div>-->
 <!-- FIN BANDEAU -->
 
 <nav>

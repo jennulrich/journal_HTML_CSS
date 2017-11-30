@@ -9,12 +9,11 @@
 <?php include "menu.php"; ?>
 
 <!-- UNE JOURNAL -->
+<div class="titleUne">
+    <h2>à la une !</h2>
+</div>
 <article class="articleUne">
-    <!--<div class="une">
-        <div class="titleOnImg">
-            <h1>Lorem Ipsum</h1>
-        </div>
-        <img src="img/christmas.jpg" alt="noel">
+    <div class="une">
         <img src="img/christmas.jpg" alt="noel" class="imgUne">
     </div>
     <div class="textUne">
@@ -38,7 +37,7 @@
             neque posuere. Donec dolor nibh, bibendum in dolor ac, aliquam ultrices purus. Donec varius tincidunt cursus.
             Pellentesque.
         </p>
-    </div>-->
+    </div>
 </article>
 <!-- FIN UNE JOURNAL -->
 
@@ -95,13 +94,15 @@
 
 <!-- BANNIERE PUB -->
 <article class="pub">
-    <img src="img/pub.gif" alt="pub">
+    <a href="#">
+        <img src="img/pub.gif" alt="pub">
+    </a>
 </article>
 <!-- FIN BANNIERE -->
 
 <!-- FORMULAIRE NEWSLETTER -->
 <div class="formTitle">
-    <h2>Inscrivez-vous à la Newsletter!</h2>
+    <h2>Inscrivez-vous à la Newsletter !</h2>
 </div>
 <div class="form">
     <fieldset>

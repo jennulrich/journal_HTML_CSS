@@ -1,8 +1,166 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+* {
+  margin: 0; }
 
-p {
-  color: #333; }
+main {
+  margin-top: 40px; }
+
+/*****************************************************************************/
+/*******************************HEADER****************************************/
+/*****************************************************************************/
+.logo {
+  display: flex;
+  text-align: center;
+  padding: 15px 0; }
+  .logo a {
+    width: 100%; }
+  .logo img {
+    width: 25%; }
+
+nav {
+  background-color: dimgrey;
+  padding: 10px; }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0; }
+    nav ul li {
+      list-style-type: none; }
+      nav ul li a {
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+        color: white; }
+      nav ul li a:hover {
+        background-color: lightgrey; }
+
+.inscriptionConnexion {
+  text-align: right;
+  margin: 0 15px 10px 0; }
+  .inscriptionConnexion a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Open Sans", sans-serif; }
+  .inscriptionConnexion .connexion::after {
+    content: " | "; }
+
+/*****************************************************************************/
+/**************************************UNE************************************/
+/*****************************************************************************/
+.titleUne {
+  font-size: 30pt;
+  text-transform: uppercase; }
+
+.articleUne {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px; }
+  .articleUne .une {
+    display: inline-block;
+    width: 45%; }
+    .articleUne .une img {
+      width: 100%;
+      border-radius: 3px; }
+  .articleUne .textUne {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top; }
+    .articleUne .textUne p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 10.5pt;
+      padding-bottom: 10px; }
+
+/*****************************************************************************/
+/*******************************DIVERS****************************************/
+/*****************************************************************************/
+.img {
+  display: flex;
+  justify-content: space-evenly; }
+  .img img {
+    width: 20%;
+    height: 100%;
+    border-radius: 3px; }
+
+.textDivers {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px; }
+  .textDivers p {
+    width: 20%;
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    font-size: 9pt; }
+    .textDivers p a {
+      float: right; }
+
+/*****************************************************************************/
+/**********************************PUB****************************************/
+/*****************************************************************************/
+.pub {
+  text-align: center; }
+
+/*****************************************************************************/
+/********************************NEWSLETTER***********************************/
+/*****************************************************************************/
+.formTitle, .titleUne {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin: 15px 0; }
+
+.form, .formInscription {
+  width: 50%;
+  margin: 15px auto; }
+  .form fieldset, .formInscription fieldset {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 20px; }
+
+/*****************************************************************************/
+/*******************************DETAIL ARTICLE********************************/
+/*****************************************************************************/
+.fullArticle {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px; }
+  .fullArticle .fullArticleImg {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top; }
+    .fullArticle .fullArticleImg img {
+      width: 100%;
+      border-radius: 3px; }
+  .fullArticle .fullArticleText {
+    width: 45%;
+    display: inline-block; }
+    .fullArticle .fullArticleText p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 10.5pt;
+      padding-bottom: 10px; }
+  .fullArticle .right {
+    text-align: right; }
+
+/*****************************************************************************/
+/************************************FOOTER***********************************/
+/*****************************************************************************/
+footer {
+  background-color: dimgrey;
+  padding: 25px 0; }
+  footer p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 15px;
+    color: white; }
+  footer .link {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    footer .link .footLink {
+      font-family: "Open Sans", sans-serif; }
+      footer .link .footLink a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px; }
 
 /*# sourceMappingURL=s2.css.map */

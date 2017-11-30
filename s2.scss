@@ -1,11 +1,210 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$font-f:    'Open Sans', sans-serif;
+$font-white: white;
+$font-black: black;
+$width-divers: 20%;
+$nav-footer-color: dimgrey;
+$border-radius-img: 3px;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+* {
+  margin: 0;
 }
 
-p {
-  color: $primary-color;
+main {
+  margin-top: 40px;
+}
+
+/*****************************************************************************/
+/*******************************HEADER****************************************/
+/*****************************************************************************/
+.logo {
+  display: flex;
+  text-align: center;
+  padding: 15px 0;
+    a {
+      width: 100%;
+    }
+    img {
+      width: 25%;
+    }
+}
+
+nav {
+  background-color: $nav-footer-color;
+  padding: 10px;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+      li {
+        list-style-type: none;
+        a {
+          padding: 10px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: $font-f;
+          color: $font-white;
+        }
+        a:hover {
+          background-color: lightgrey;
+        }
+      }
+    }
+}
+
+.inscriptionConnexion {
+  text-align: right;
+  margin: 0 15px 10px 0;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $font-black;
+      font-family: $font-f;
+    }
+    .connexion::after {
+      content: " | ";
+    }
+}
+
+/*****************************************************************************/
+/**************************************UNE************************************/
+/*****************************************************************************/
+.titleUne {
+  font-size: 30pt;
+  text-transform: uppercase;
+}
+
+.articleUne {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  .une {
+    display: inline-block;
+    width: 45%;
+    img {
+      width: 100%;
+      border-radius: $border-radius-img;
+    }
+  }
+  .textUne {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    p{
+      font-family: $font-f;
+      font-size: 10.5pt;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/*****************************************************************************/
+/*******************************DIVERS****************************************/
+/*****************************************************************************/
+.img {
+  display: flex;
+  justify-content: space-evenly;
+    img {
+      width: $width-divers;
+      height: 100%;
+      border-radius: $border-radius-img;
+    }
+}
+
+.textDivers {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+    p {
+      width: $width-divers;
+      text-align: justify;
+      font-family: $font-f;
+      font-size: 9pt;
+        a {
+          float: right;
+        }
+    }
+}
+
+/*****************************************************************************/
+/**********************************PUB****************************************/
+/*****************************************************************************/
+.pub {
+  text-align: center;
+}
+
+/*****************************************************************************/
+/********************************NEWSLETTER***********************************/
+/*****************************************************************************/
+.formTitle, .titleUne {
+  text-align: center;
+  font-family: $font-f;
+  margin: 15px 0;
+}
+
+.form, .formInscription {
+  width: 50%;
+  margin: 15px auto;
+  fieldset {
+    border: 1px solid #eee;
+    border-radius: $border-radius-img;
+    padding: 20px;
+  }
+}
+
+/*****************************************************************************/
+/*******************************DETAIL ARTICLE********************************/
+/*****************************************************************************/
+.fullArticle {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  .fullArticleImg {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    img {
+      width: 100%;
+      border-radius: $border-radius-img;
+    }
+  }
+  .fullArticleText {
+    width: 45%;
+    display: inline-block;
+      p {
+        font-family: $font-f;
+        font-size: 10.5pt;
+        padding-bottom: 10px;
+      }
+  }
+  .right {
+    text-align: right;
+  }
+}
+
+/*****************************************************************************/
+/************************************FOOTER***********************************/
+/*****************************************************************************/
+footer {
+  background-color: $nav-footer-color;
+  padding: 25px 0;
+    p {
+      text-align: center;
+      font-family: $font-f;
+      margin-top: 15px;
+      color: $font-white;
+    }
+    .link {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .footLink {
+        font-family: $font-f;
+        a {
+          color: $font-white;
+          text-decoration: none;
+          margin: 0 15px;
+        }
+      }
+    }
 }
