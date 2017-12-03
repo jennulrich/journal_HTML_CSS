@@ -1,166 +1,89 @@
-* {
-  margin: 0; }
+* { margin: 0; }
 
-main {
-  margin-top: 40px; }
+main { margin-top: 165px; }
 
 /*****************************************************************************/
 /*******************************HEADER****************************************/
 /*****************************************************************************/
-.logo {
-  display: flex;
-  text-align: center;
-  padding: 15px 0; }
-  .logo a {
-    width: 100%; }
-  .logo img {
-    width: 25%; }
+header { position: fixed; width: 100%; z-index: 10; top: 0; background: white; }
 
-nav {
-  background-color: dimgrey;
-  padding: 10px; }
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0; }
-    nav ul li {
-      list-style-type: none; }
-      nav ul li a {
-        padding: 10px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: "Open Sans", sans-serif;
-        color: white; }
-      nav ul li a:hover {
-        background-color: lightgrey; }
+.logo { display: flex; text-align: center; padding: 15px 0; }
+.logo a { width: 100%; }
+.logo img { width: 25%; }
 
-.inscriptionConnexion {
-  text-align: right;
-  margin: 0 15px 10px 0; }
-  .inscriptionConnexion a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-family: "Open Sans", sans-serif; }
-  .inscriptionConnexion .connexion::after {
-    content: " | "; }
+nav { background-color: dimgrey; padding: 10px; }
+nav ul { display: flex; justify-content: space-around; padding: 0; margin: 0; }
+nav ul li { list-style-type: none; }
+nav ul li a { padding: 10px; text-decoration: none; text-transform: uppercase; font-family: "Open Sans", sans-serif; color: white; }
+nav ul li a:hover { background-color: lightgrey; }
+
+.inscriptionConnexion { text-align: right; margin: 0 15px 10px 0; }
+.inscriptionConnexion a { text-decoration: none; text-transform: uppercase; color: black; font-family: "Open Sans", sans-serif; }
+.inscriptionConnexion a.connexion::after { content: " | "; }
 
 /*****************************************************************************/
 /**************************************UNE************************************/
 /*****************************************************************************/
-.titleUne {
-  font-size: 30pt;
-  text-transform: uppercase; }
+.titleUne { font-size: 30pt; text-transform: uppercase; }
 
-.articleUne {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 25px; }
-  .articleUne .une {
-    display: inline-block;
-    width: 45%; }
-    .articleUne .une img {
-      width: 100%;
-      border-radius: 3px; }
-  .articleUne .textUne {
-    display: inline-block;
-    width: 45%;
-    vertical-align: top; }
-    .articleUne .textUne p {
-      font-family: "Open Sans", sans-serif;
-      font-size: 10.5pt;
-      padding-bottom: 10px; }
+.articleUne { display: flex; justify-content: space-evenly; margin-bottom: 25px; }
+.articleUne .une { display: inline-block; width: 45%; }
+.articleUne .une img { width: 100%; border-radius: 3px; }
+.articleUne .textUne { display: inline-block; width: 45%; vertical-align: top; }
+.articleUne .textUne p { font-family: "Open Sans", sans-serif; font-size: 10.5pt; padding-bottom: 10px; }
 
 /*****************************************************************************/
 /*******************************DIVERS****************************************/
 /*****************************************************************************/
-.img {
-  display: flex;
-  justify-content: space-evenly; }
-  .img img {
-    width: 20%;
-    height: 100%;
-    border-radius: 3px; }
+.img { display: flex; justify-content: space-evenly; }
+.img img { width: 20%; height: 100%; border-radius: 3px; }
 
-.textDivers {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 15px; }
-  .textDivers p {
-    width: 20%;
-    text-align: justify;
-    font-family: "Open Sans", sans-serif;
-    font-size: 9pt; }
-    .textDivers p a {
-      float: right; }
+.textDivers { display: flex; justify-content: space-evenly; margin-bottom: 15px; }
+.textDivers p { width: 20%; text-align: justify; font-family: "Open Sans", sans-serif; font-size: 9pt; }
+.textDivers p a { float: right; }
 
 /*****************************************************************************/
 /**********************************PUB****************************************/
 /*****************************************************************************/
-.pub {
-  text-align: center; }
+.pub { text-align: center; }
 
 /*****************************************************************************/
 /********************************NEWSLETTER***********************************/
 /*****************************************************************************/
-.formTitle, .titleUne {
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  margin: 15px 0; }
+.formTitle, .titleUne { text-align: center; font-family: "Open Sans", sans-serif; margin: 15px 0; }
 
-.form, .formInscription {
-  width: 50%;
-  margin: 15px auto; }
-  .form fieldset, .formInscription fieldset {
-    border: 1px solid #eee;
-    border-radius: 3px;
-    padding: 20px; }
+.form, .formInscription { width: 50%; margin: 35px auto; }
+.form fieldset, .formInscription fieldset { border: 1px solid #eee; border-radius: 3px; padding: 50px; }
+.form fieldset form .mail select, .form fieldset form .coordonnees select, .form fieldset form .country select, .form fieldset form .date select, .formInscription fieldset form .mail select, .formInscription fieldset form .coordonnees select, .formInscription fieldset form .country select, .formInscription fieldset form .date select { display: block; width: 100%; margin: 5px 0 10px 0; }
+.form fieldset form .mail label, .form fieldset form .coordonnees label, .form fieldset form .country label, .form fieldset form .date label, .formInscription fieldset form .mail label, .formInscription fieldset form .coordonnees label, .formInscription fieldset form .country label, .formInscription fieldset form .date label { font-family: "Open Sans", sans-serif; }
+.form fieldset form .mail input, .form fieldset form .coordonnees input, .form fieldset form .country input, .form fieldset form .date input, .formInscription fieldset form .mail input, .formInscription fieldset form .coordonnees input, .formInscription fieldset form .country input, .formInscription fieldset form .date input { display: block; padding: 5px; width: 100%; border: 1px solid darkgrey; border-radius: 3px; margin: 5px 0 10px 0; }
+.form fieldset form .button, .formInscription fieldset form .button { text-align: center; }
+.form fieldset form .button button, .formInscription fieldset form .button button { padding: 5px; border-radius: 3px; margin-top: 10px; outline: none; }
 
 /*****************************************************************************/
 /*******************************DETAIL ARTICLE********************************/
 /*****************************************************************************/
-.fullArticle {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 15px; }
-  .fullArticle .fullArticleImg {
-    width: 45%;
-    display: inline-block;
-    vertical-align: top; }
-    .fullArticle .fullArticleImg img {
-      width: 100%;
-      border-radius: 3px; }
-  .fullArticle .fullArticleText {
-    width: 45%;
-    display: inline-block; }
-    .fullArticle .fullArticleText p {
-      font-family: "Open Sans", sans-serif;
-      font-size: 10.5pt;
-      padding-bottom: 10px; }
-  .fullArticle .right {
-    text-align: right; }
+.fullArticle { display: flex; justify-content: space-evenly; margin-bottom: 15px; }
+.fullArticle .fullArticleImg { width: 45%; display: inline-block; vertical-align: top; }
+.fullArticle .fullArticleImg img { width: 100%; border-radius: 3px; }
+.fullArticle .fullArticleText { width: 45%; display: inline-block; }
+.fullArticle .fullArticleText p { font-family: "Open Sans", sans-serif; font-size: 10.5pt; padding-bottom: 10px; }
+.fullArticle .right { text-align: right; }
 
 /*****************************************************************************/
 /************************************FOOTER***********************************/
 /*****************************************************************************/
-footer {
-  background-color: dimgrey;
-  padding: 25px 0; }
-  footer p {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 15px;
-    color: white; }
-  footer .link {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    footer .link .footLink {
-      font-family: "Open Sans", sans-serif; }
-      footer .link .footLink a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px; }
+footer { background-color: dimgrey; padding: 25px 0; position: relative; bottom: 0; }
+footer p { text-align: center; font-family: "Open Sans", sans-serif; margin-top: 15px; color: white; }
+footer .link { display: flex; flex-direction: column; text-align: center; }
+footer .link .footLink { font-family: "Open Sans", sans-serif; }
+footer .link .footLink a { color: white; text-decoration: none; margin: 0 15px; }
+
+/*****************************************************************************/
+/************************************CONNEXION********************************/
+/*****************************************************************************/
+.password { margin-top: 10px; }
+.password label { font-family: "Open Sans", sans-serif; padding-right: 20px; }
+.password input { display: block; padding: 5px; width: 100%; border: 1px solid darkgrey; border-radius: 3px; margin: 5px 0 10px 0; }
 
 /*# sourceMappingURL=s2.css.map */
