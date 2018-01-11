@@ -8,5 +8,7 @@ TP HTML/CSS 27.11 -> 01.12
 
 + Création d'une page avec formulaire de connexion et une autre avec un formulaire d'inscription
 
-+ Création d'un bandeau déroulant pour les news importantes 
++ Création d'un bandeau déroulant pour les news importantes (supprimé suite à des bugs)
+
++ Utilisation de Sass, display (flex, block), float
 
